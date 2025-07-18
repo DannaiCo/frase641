@@ -72,7 +72,7 @@
       .then(res => res.json())
       .then(frases => {
         const el = document.getElementById("frase");
-        let i = 0;
+let i = Math.floor(Math.random() * frases.length);
 
         function mostrarFrase() {
           el.classList.remove("mostrar");
